@@ -1,0 +1,610 @@
+/*!*****************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/assets/sass/dashboard.sass ***!
+  \*****************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap);
+/*!*********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/assets/sass/dashboard.sass (1) ***!
+  \*********************************************************************************************************************************************************/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+
+:root {
+  --tooltip: var(--secondary3);
+  --secondary3: rgb(40, 132, 255);
+  --secondary4: rgb(255, 118, 76);
+  --avatar_translate: 0, 0;
+}
+
+html, .page {
+  margin: 0 auto;
+  max-width: 1339px;
+  height: 100%;
+}
+
+.page__main {
+  height: 1024px;
+}
+
+.page {
+  font-family: "DM Sans", sans-serif;
+  background-color: rgb(31, 33, 40);
+  color: rgb(255, 255, 255);
+}
+.page__sidebar {
+  position: fixed;
+  padding-left: 26px;
+}
+.page__main {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.sidebar {
+  z-index: 500;
+  display: flex;
+  flex-direction: column;
+  width: 248px;
+  height: 100%;
+  background-color: rgb(36, 39, 49);
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.sidebar__logo {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+.sidebar__logo-img {
+  display: block;
+  width: 109px;
+  height: auto;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.nav__controls {
+  margin-top: auto;
+}
+.nav__link {
+  display: flex;
+  align-content: center;
+  border-radius: 6px;
+  width: 174px;
+  padding: 7px;
+  padding-left: 8px;
+  margin-bottom: 17px;
+  filter: opacity(0.5);
+  background-color: transparent;
+}
+.nav__link:hover {
+  filter: opacity(0.75);
+}
+.nav__img {
+  margin-right: 8px;
+}
+.nav_current-link {
+  filter: none;
+  background-color: rgb(41, 46, 61);
+}
+.nav_current-link:hover {
+  filter: brightness(1.1);
+}
+
+.header {
+  display: flex;
+  height: 78px;
+  background-color: rgb(36, 39, 49);
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 248px;
+  flex-shrink: 0;
+}
+.header__searchbar {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.header__user {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.searchbar {
+  display: flex;
+  max-width: 358px;
+  height: 46px;
+  background-color: rgb(31, 33, 40);
+  border-radius: 8px;
+}
+.searchbar__icon {
+  margin-left: auto;
+  margin-right: auto;
+  width: 20px;
+  height: auto;
+}
+.searchbar__form {
+  margin-left: auto;
+}
+.searchbar__input {
+  width: 306px;
+  height: 100%;
+  background-color: transparent;
+  caret-color: rgb(239, 144, 17);
+  color: rgb(255, 255, 255);
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.user {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 110px;
+  height: 46px;
+}
+.user__profile {
+  margin-left: 39px;
+}
+
+.profile {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+}
+.profile__img {
+  height: 100%;
+  width: auto;
+  transform: translate(var(--avatar_translate, 0)) scale(var(--avatar_scale, 1));
+}
+
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  border-radius: 5px;
+  background-color: rgb(40, 43, 50);
+  width: 58px;
+  height: 32px;
+  padding: 2px 8px;
+  z-index: 1000;
+  font-size: 10px;
+  font-weight: 700;
+  pointer-events: none;
+}
+.tooltip__value {
+  position: relative;
+  left: 9px;
+}
+.tooltip__value::before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: 3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--tooltip);
+}
+
+.grid {
+  border-radius: 14px;
+  background-color: rgb(36, 39, 49);
+  color: rgb(255, 255, 255);
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 15px 35px;
+}
+.stats__header {
+  align-self: flex-start;
+  margin-bottom: 24px;
+}
+.stats__span {
+  font-weight: 700;
+}
+.stats__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  margin-bottom: 14px;
+}
+.stats__timespan {
+  display: flex;
+  justify-content: space-between;
+}
+.stats__miles {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+}
+.stats__day, .stats__week, .stats__month {
+  appearance: none;
+}
+.stats__day + label, .stats__week + label, .stats__month + label {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3.5px 12px;
+  border-radius: 24px;
+  color: rgb(128, 129, 145);
+  margin: 0 2px;
+}
+.stats__day + label:hover, .stats__week + label:hover, .stats__month + label:hover {
+  outline: 2px solid rgb(40, 132, 255);
+  background-color: rgba(0, 104, 244, 0.2);
+  cursor: pointer;
+}
+.stats__day:checked + label, .stats__week:checked + label, .stats__month:checked + label {
+  background-color: rgb(40, 132, 255);
+  color: rgb(255, 255, 255);
+}
+.stats__chart {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-grow: 1;
+}
+.stats__chart-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+  width: 40px;
+}
+.stats__spacer {
+  position: absolute;
+  content: "";
+  right: -12px;
+  bottom: 25px;
+  width: 2px;
+  height: 193px;
+  background-color: rgb(40, 44, 47);
+}
+.stats__column {
+  position: relative;
+  width: 28px;
+  background-color: rgb(31, 33, 40);
+  margin-bottom: 7px;
+}
+.stats__item-name {
+  color: rgb(124, 124, 141);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.dot {
+  display: none;
+  position: absolute;
+  background-color: white;
+  left: 21px;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(255, 118, 76);
+}
+
+.block-header {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.content {
+  display: grid;
+  column-gap: 25px;
+  row-gap: 25px;
+  justify-items: center;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 266px 332px 236px;
+  padding: 30px;
+  margin-left: 248px;
+}
+
+.grid {
+  border-radius: 14px;
+  background-color: rgb(36, 39, 49);
+  color: rgb(255, 255, 255);
+}
+.grid_3 {
+  grid-column: span 3;
+  width: 232px;
+}
+.grid_4 {
+  grid-column: span 4;
+  width: 318px;
+}
+.grid_6 {
+  grid-column: span 6;
+  width: 488px;
+}
+.grid_meter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.2s ease-in;
+}
+.grid__logo {
+  margin-top: 22.5px;
+}
+.grid__circle {
+  transition: 0.2s ease-in;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  opacity: 0.1;
+}
+.grid__icon {
+  transition: 0.2s ease-in;
+  width: 40px;
+  height: 40px;
+}
+.grid__name {
+  transition: 0.2s ease-in;
+  opacity: 0;
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.grid__progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+}
+.grid.grid_active .grid__name {
+  opacity: 1;
+}
+.grid.grid_active .grid__circle {
+  background-color: rgb(255, 255, 255);
+}
+.grid.grid_active .grid__icon {
+  background-color: rgb(255, 255, 255);
+}
+.grid.grid_active .progress__empty path {
+  stroke: rgb(255, 255, 255);
+  stroke-opacity: 0.1;
+}
+.grid.grid_active .progress__current path {
+  stroke: rgb(255, 255, 255);
+}
+.grid_id_energy .grid__circle {
+  background-color: rgb(161, 98, 247);
+}
+.grid_id_energy .grid__icon {
+  mask-image: url(../../assets/img/energy.svg);
+  -webkit-mask-image: url(../../assets/img/energy.svg);
+  background-color: rgb(161, 98, 247);
+}
+.grid_id_energy .progress__current path {
+  stroke: rgb(161, 98, 247);
+}
+.grid_id_energy.grid_active {
+  background-color: rgb(161, 98, 247);
+}
+.grid_id_range .grid__circle {
+  background-color: rgb(255, 99, 112);
+}
+.grid_id_range .grid__icon {
+  mask-image: url(../../assets/img/range.svg);
+  -webkit-mask-image: url(../../assets/img/range.svg);
+  background-color: rgb(255, 99, 112);
+}
+.grid_id_range .progress__current path {
+  stroke: rgb(255, 99, 112);
+}
+.grid_id_range.grid_active {
+  background-color: rgb(255, 99, 112);
+}
+.grid_id_break-fluid .grid__circle {
+  background-color: rgb(161, 98, 247);
+}
+.grid_id_break-fluid .grid__icon {
+  mask-image: url(../../assets/img/break_fluid.svg);
+  -webkit-mask-image: url(../../assets/img/break_fluid.svg);
+  background-color: rgb(161, 98, 247);
+}
+.grid_id_break-fluid .progress__current path {
+  stroke: rgb(161, 98, 247);
+}
+.grid_id_break-fluid.grid_active {
+  background-color: rgb(161, 98, 247);
+}
+.grid_id_tire-wear .grid__circle {
+  background-color: rgb(246, 204, 13);
+}
+.grid_id_tire-wear .grid__icon {
+  mask-image: url(../../assets/img/tire_wear.svg);
+  -webkit-mask-image: url(../../assets/img/tire_wear.svg);
+  background-color: rgb(246, 204, 13);
+}
+.grid_id_tire-wear .progress__current path {
+  stroke: rgb(246, 204, 13);
+}
+.grid_id_tire-wear.grid_active {
+  background-color: rgb(246, 204, 13);
+}
+
+.progress path {
+  transition: 0.2s ease-in;
+}
+.progress__bar {
+  position: absolute;
+  width: 112px;
+  height: 95px;
+}
+.progress__empty {
+  position: absolute;
+}
+.progress__empty path {
+  stroke: rgb(31, 33, 40);
+}
+.progress__current {
+  position: absolute;
+}
+.progress__percentage {
+  margin-top: 36px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.stats__column {
+  transition: 0.2s ease-in;
+}
+.stats__chart-item:last-child .stats__spacer {
+  display: none;
+}
+.stats__chart-item_hovered .stats__column {
+  background-color: rgb(40, 132, 255);
+}
+
+.stats_cars .stats__timespan {
+  background-color: rgb(43, 46, 56);
+  border-radius: 10px;
+  order: 2;
+}
+.stats_cars .stats__timespan .stats__day + label:hover, .stats_cars .stats__timespan .stats__week + label:hover, .stats_cars .stats__timespan .stats__month + label:hover {
+  outline: 2px solid rgb(255, 118, 76);
+  background-color: rgba(255, 79, 25, 0.2);
+}
+.stats_cars .stats__timespan .stats__day:checked + label, .stats_cars .stats__timespan .stats__week:checked + label, .stats_cars .stats__timespan .stats__month:checked + label {
+  background-color: rgb(255, 118, 76);
+}
+.stats_cars .stats__chart {
+  position: relative;
+}
+.stats_cars .stats__chart-item {
+  flex-grow: 1;
+}
+.stats_cars .stats__chart-item .stats__spacer {
+  position: static;
+  display: block;
+}
+.stats_cars .stats__graphics {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.stats_cars .stats__svg {
+  position: absolute;
+}
+.stats_cars .stats__svg .data__line {
+  color: rgb(255, 118, 76);
+}
+.stats_cars .stats__svg .data__gradient {
+  color: rgb(255, 118, 76);
+}
+
+.product-card {
+  padding: 15px 27px;
+  color: rgb(36, 39, 49);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 700;
+}
+.product-card__recommendation {
+  display: flex;
+}
+.product-card__recommendation-svg {
+  margin-right: 10px;
+}
+.product-card__recommendation-svg path {
+  fill: rgb(114, 118, 124);
+}
+.product-card_n1 {
+  background-color: rgb(225, 223, 164);
+}
+/*!*****************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/assets/sass/dashboard.scss ***!
+  \*****************************************************************************************************************************************************/
+.product-card {
+  padding: 15px 27px;
+  color: rgb(36, 39, 49);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 700;
+}
+.product-card__recommendation {
+  display: flex;
+}
+.product-card__recommendation-svg {
+  margin-right: 10px;
+  width: 24px;
+}
+.product-card__recommendation-svg path {
+  fill: rgb(114, 118, 124);
+}
+.product-card__img {
+  margin-top: 11px;
+}
+.product-card__name {
+  margin-top: 11px;
+  font-family: "DM Sans";
+  font-size: 20px;
+  font-weight: 700;
+}
+.product-card__stats {
+  margin-top: 6px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.product-card__stat:not(:first-child) {
+  margin-left: 16px;
+}
+.product-card__stat2 {
+  color: rgb(114, 118, 124);
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-weight: 500;
+}
+.product-card__price {
+  margin-left: auto;
+  color: rgb(114, 118, 124);
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-weight: 500;
+}
+.product-card_n1 {
+  background-color: rgb(225, 223, 164);
+}
+.product-card_n2 {
+  background-color: rgb(227, 236, 241);
+}
+.product-card_n3 {
+  background-color: rgb(244, 227, 229);
+}
+
+/*# sourceMappingURL=dashboard.css.map*/
